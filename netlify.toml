@@ -1,0 +1,11 @@
+[build]
+  # Build command to execute
+  command = "npm run build"
+  # Directory to publish to Netlify
+  publish = "dist"
+
+[[redirects]]
+  # Redirect all requests to index.html for Single Page Application routing
+  from = "/*"
+  to = "/index.html"
+  status = 200
